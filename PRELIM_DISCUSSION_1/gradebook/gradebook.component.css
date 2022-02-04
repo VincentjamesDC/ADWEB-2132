@@ -1,0 +1,18 @@
+div ,*{
+    padding: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card-body  {
+   
+    width: 18rem;
+    padding:auto;
+    margin: 20px auto;
+    
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}

@@ -1,0 +1,38 @@
+<div class="row">
+<div class="card" style="width: 20rem;">
+    <div class="card-body">
+        <p>Name: <input type="text" [(ngModel)]="studName"/></p>
+        <p>Subject: <input type="text" [(ngModel)]="subject"/></p>
+      <h5 class="card-title">Hello, {{studName}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Subject: {{subject}}</h6>
+      <p class="card-text">Simulation for Grades:</p>
+      <input type="number"[(ngModel)]="prelims" class="form-control" placeholder="Prelims"/>
+      <input type="number"[(ngModel)]="midterms" class="form-control" placeholder="Midterms"/>
+      <input type="number"[(ngModel)]="finals" class="form-control" placeholder="Finals"/>
+      <p>Prelim Grade: {{prelims}}</p>
+      <p>Midterms Grade: {{midterms}}</p>
+      <p>Final Grade: {{finals}}</p>
+
+        <p>Your Final Average is for {{subject}} is {{((this.prelims+this.midterms+this.finals)/3)}}</p>
+
+    </div>
+  </div>
+    <div class="card" style="width: 20rem;">
+        <div class="card-body">
+            <p>Name: <input type="text" [(ngModel)]="studName2"/></p>
+            <p>Subject: <input type="text" [(ngModel)]="subject2"/></p>
+          <h5 class="card-title">Hello, {{studName2}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Subject: {{subject2}}</h6>
+          <p class="card-text">Simulation for Grades:</p>
+          <input type="number"[(ngModel)]="prelims2" class="form-control" placeholder="Prelims"/>
+          <input type="number"[(ngModel)]="midterms2" class="form-control" placeholder="Midterms"/>
+          <input type="number"[(ngModel)]="finals2" class="form-control" placeholder="Finals"/>
+          <p>Prelim Grade: {{prelims2}}</p>
+          <p>Midterms Grade: {{midterms2}}</p>
+          <p>Final Grade: {{finals2}}</p>
+    
+            <p>Your Final Average is for {{subject2}} is {{((this.prelims2+this.midterms2+this.finals2)/3)}}</p>
+    
+        </div>
+      </div>
+    </div>
